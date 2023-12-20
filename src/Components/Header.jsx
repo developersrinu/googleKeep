@@ -18,11 +18,11 @@ function Header() {
 
 
   return (
-    <div className='header22' style={{ backgroundColor: theme ? 'black' : 'white', color:theme ? 'white' : 'black'}}>
+    <div className='header22' >
      
       <Navbar bg="light" data-bs-theme="light">
         <Container>
-          <Navbar.Brand ><FaAlignJustify/></Navbar.Brand>
+          <Navbar.Brand id ='hy'><FaAlignJustify/></Navbar.Brand>
 
           <Navbar.Brand style={{display:'flex', alignItems:'center'}} >
             <img src={p1} alt=""  style={{width:'45px',height:'45px'}}/>

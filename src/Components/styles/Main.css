@@ -202,4 +202,9 @@
     .Grid-item{
          width: fit-content;
     }
+    #hy{
+        display: none !important;
+       
+    }
+
 }
