@@ -5,6 +5,7 @@ import { FaAlignJustify } from "react-icons/fa";
 import p1 from '../icons/unnamed.png'
 import Input from './input';
 import './styles/Main.css'
+import { FaWrench,FaUser, } from "react-icons/fa";
 
 import { FlagContext } from './ContextProvider';
 import { useContext } from 'react';
@@ -32,15 +33,18 @@ function Header() {
 
 
           <Nav className="me-auto">
-            <Nav.Link onClick={()=>setFlag(!isFlag)} className='subh'>
+            <Nav.Link onClick={()=>setFlag(!isFlag)} className='aaa'>
               {
                 isFlag?'Grid':"list"
               }
             </Nav.Link>
-            <Nav.Link  onClick={()=>setTheme(!theme)} style={{fontSize:'1.1rem'}}>
-              {
-                theme?'dark':'light'
-              }
+
+            <Nav.Link className='aaa'>
+              <FaWrench/>
+            </Nav.Link>
+
+            <Nav.Link className='aaa'>
+              <FaUser/>
             </Nav.Link>
             {/* <Nav.Link href="#pricing">Pricing</Nav.Link> */}
           </Nav>
