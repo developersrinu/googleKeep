@@ -1,0 +1,189 @@
+.header22 {
+    position: fixed;
+    z-index: 10 !important;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+
+
+
+
+
+.main {
+    text-align: center;
+    width: 76%;
+
+    margin-left: 65px;
+    margin-top: 20px;
+
+
+
+
+}
+
+.cord {
+    position: sticky;
+    top: 100px;
+    width: 90%;
+    background-color: white;
+    padding: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
+}
+
+.aTop {
+    display: flex;
+    justify-content: space-between;
+}
+
+.item {
+    display: flex;
+    gap: 20px;
+}
+
+.inputTitle {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid black;
+    margin: 10px;
+
+}
+
+.inputDesc {
+    width: 100%;
+    margin: 10px;
+    border: none;
+
+}
+
+.items-main {
+    display: flex;
+    gap: 30px;
+    margin-top: 10px;
+}
+
+
+
+/* CSS */
+.button-18 {
+    width: fit-content;
+    background-color: rgb(255,186,0);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.listDiv {
+    width: 90%;
+    /* display: flex; */
+
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* background-color: rgb(0, 255, 128); */
+    flex-direction: row-reverse;
+
+}
+
+.GridDiv {
+    width: 90%;
+
+    display: flex !important;
+    justify-content: space-around !important;
+    flex-wrap: wrap !important;
+    flex-direction: row-reverse !important;
+    /* flex-wrap: wrap; */
+
+}
+
+
+.list-item {
+
+    width: 90%;
+    justify-items: flex-start !important;
+    white-space: nowrap;
+    /* Prevent text from wrapping */
+    overflow: hidden;
+    /* Hide any overflowing content */
+    text-overflow: ellipsis !important;
+    /* Display ellipsis for overflowed text */
+    /* background-color: aqua; */
+    min-height: 60px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.Grid-item {
+    width: 20%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    white-space: nowrap;
+    /* Prevent text from wrapping */
+    overflow: hidden;
+    /* Hide any overflowing content */
+    text-overflow: ellipsis !important;
+    /* Display ellipsis for overflowed text */
+    /* background-color: rgb(255, 191, 0) !important; */
+    min-height: 60px;
+    padding: 20px !important;
+    margin: 20px !important;
+}
+
+
+.Grid-item:hover .aa {
+    display: none;
+}
+
+
+
+/* .childItem{
+    display:none ;
+}
+.list-item:hover > .childItem{
+    display: block;
+} */
+
+
+
+
+
+.delete {
+    width: 25px;
+    height: 20px;
+}
+
+
+
+.childItem {
+    display: none !important;
+}
+
+.list-item:hover .childItem {
+    display: flex !important;
+    justify-content: space-evenly !important;
+    margin-top: 20px !important;
+}
+
+.Grid-item:hover .childItem {
+    display: flex !important;
+    justify-content: space-evenly !important;
+    margin-top: 20px !important;
+}
+
+
+
+
+.color-picker-container {
+    position: relative;
+    display: inline-block;
+}
+
+.color-input {
+    position: absolute;
+    opacity: 0;
+}
+
+.palette-icon {
+    cursor: pointer;
+}
